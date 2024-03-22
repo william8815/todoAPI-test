@@ -126,8 +126,5 @@ const server = http.createServer((req, res) => {
     res.end();
   }
 });
-let port = process.env.PORT || 3008;
-let hostname = "localhost";
-server.listen(port, hostname, () => {
-  console.log(`the server is listening on http://${hostname}:${port}`);
-});
+let port = process.env.PORT || 3005;
+server.listen(port);
